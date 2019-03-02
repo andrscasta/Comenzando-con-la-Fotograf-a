@@ -1,0 +1,206 @@
+body{
+	background-color: #02010a;
+	font-style: dancing Script;
+	font-family: 'Dancing Script', cursive;
+}
+	.container {
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 10vh 10vh 0 0;
+	background-color: #5b7989;
+  color: white;
+	display: flex;
+  text-shadow: 2px 2px 0 #02010a;
+	padding-left: 2%;
+	padding-right: 2%;
+	box-sizing: border-box;
+  }
+	.c1, .c2
+	{
+		width: 50%;
+	}
+	.c1
+	{
+		text-align: left;
+	}
+	.c2
+	{
+		text-align: right;
+	}
+	.c2 a,#inicio
+	{
+	color: white;
+	}
+	#inicio, #paisajes2, #retratos2
+	{
+		text-decoration: none;
+	}
+	.container2
+	{
+		width: 100%;
+		height: auto;
+		display: flex;
+		background-color: #82c3a6;
+		justify-content: center;
+		align-items:center;
+		padding: 2%;
+		box-sizing: border-box;
+	}
+		.crisantemo, .desert, .koala
+		{
+			width: 90%;
+			height: auto;
+			box-shadow: 2px 2px 0 0 #02010a;
+			border: 1px solid black;
+		}
+		.container3
+		{
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-flow:row nowrap;
+			justify-content: space-around;
+			background-color: #d5c75f;
+			align-items:center;
+			padding: 2%;
+			box-sizing: border-box;
+		}
+		.c3, .c4, .c5
+		{
+			width: 100%;
+			height: auto;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
+		.desert
+		{
+			transition-duration: 1s;
+		}
+		.desert:hover
+		{
+			transform: rotatez(10deg);
+			box-shadow: 2px 2px 0 #82c3a6;
+		}
+		.koala
+		{
+			transition-duration: 1s;
+		}
+		.koala:hover
+		{
+			transform: translate(20px, 5px);
+			box-shadow: 2px 2px 0 #82c3a6;
+		}
+		.container4
+		{
+			width: 100%;
+			height: auto;
+			display: flex;
+			background-color: #C6d5c5;
+			flex-flow: row nowrap;
+			justify-content: space-around;
+			border-radius: 0 0 10px 10px;
+			padding: 2%;
+			box-sizing: border-box;
+
+		}
+		.c6, .c7, .c8, .c9
+		{
+			width: 100%;
+			text-align: center;
+		}
+		.facebook, .instagram, .youtube
+		{
+			width: 20px;
+			width: 20px;
+		}
+		@media(max-width:400px) {
+			.container, .c1, .c2{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				text-align: center;
+			}
+			.container3{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+			}
+			.container4{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+			}
+			.container4 div h2, .container4 div h3, .facebook,.instagram,.youtube, .container4 div p
+			{
+			text-align: left;
+			}
+			.container4 div img{
+				float: left;
+			}
+		}
+		.container5, .container6
+		{
+			width: 100%;
+			height: auto;
+			display: flex;
+			background-color: #d5c75f;
+			flex-flow: row nowrap;
+			justify-content: center;
+			padding: 2%;
+			box-sizing: border-box;
+		}
+		.c10, .c11, .c12, .c13, .c14, .c15
+		{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		padding: 2%;
+		box-sizing: border-box;
+		}
+		.lighthouse, .tulips
+		{
+			width: 100%;
+			height: auto;
+			box-shadow: 2px 2px 0 0 #02010a;
+			border: 1px solid black;
+		}
+		.c10
+		{
+			filter: blur(10px);
+		}
+		.c11, .c13, .c15
+		{
+			filter: grayscale(100%);
+		}
+		.c12
+		{
+			filter: sepia(90);
+		}
+		@media(max-width:400px) {
+			.container5, .container6{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				text-align: center;
+			}
+		}
+		.container{
+		-webkit-animation-name: animation1;
+		-webkit-animation-duration:3s;
+		}
+		@-webkit-keyframes animation1{
+			0%{
+				margin-top: 150%;
+			}
+			60%{
+				margin-top: -5%;
+			}
+			100%{
+				margin-top: 0%
+			}
+		}
